@@ -241,7 +241,7 @@ void loop()
 
 ### Funcionamiento aplicado de cada componente
 #### Sensor de temperatura [TMP36]:
-- U2: Terminal tierra conectado a GND del Arduino Uno (U1). Terminal vout al pin A0 (entrada analogica) del U1. Terminal potencia conectado a 5V del U1.
+- U2: Terminal GND conectado a GND del Arduino Uno (U1). Terminal VOUT al pin A0 (entrada analogica) del U1. Terminal +VS conectado a 5V del U1.
 
 #### LCD 16 x 2:
 U4 Terminales:
@@ -259,15 +259,15 @@ U4 Terminales:
 - DB7: conectado al pin D9 (salida digital) del U1.
 
 #### Posicional Microservomotor (SERVO1):
-- SERVO1: Terminal tierra conectado a GND del Arduino Uno (U1). Terminal potencia conectado a 5V del U1. Terminal señal al pin D3 (entrada digital) del U1.
+- SERVO1: GND tierra conectado a GND del Arduino Uno (U1). Terminal PWR conectado a 5V del U1. Terminal SIG al pin D3 (entrada digital) del U1.
 
 #### Sensor IR:
-- U5: Terminal sal. al pin D11 (entrada digital) del U1. Terminal tierra conectado a GND del Arduino Uno (U1). Terminal potencia conectado a 5V del U1.
+- U5: Terminal GND conectado a GND del Arduino Uno (U1). Terminal OUT al pin D11 (entrada digital) del U1. Terminal VCC conectado a 5V del U1.
 
 #### Leds:
 Los leds son encendidos cuando sus salidas digitales reciben un HIGH o 1 y se apagan cuando reciben un LOW o 0.
-- D1 RED: El catodo esta conectado a GND del U1. El anodo esta conectado a una resistencia (R1) de 220 ohms al pin A1 (salida digital) del U1.
-- D2 GREEN: El catodo esta conectado a GND del U1. El anodo esta conectado a una resistencia (R2) de 220 ohms al pin A2 (salida digital) del U1.
+- D1 RED: El catodo esta conectado a una resistencia (R1) de 220 ohms y a GND del U1. El anodo esta conectado al pin A1 (salida digital) del U1.
+- D2 GREEN: El catodo esta conectado a una resistencia (R2) de 220 ohms y a GND del U1. El anodo esta conectado al pin A2 (salida digital) del U1.
 
 
 ## :robot: Link al proyecto
